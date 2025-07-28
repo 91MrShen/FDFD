@@ -32,7 +32,7 @@ This repository contains a beginner-friendly suite of **Finite-Difference Freque
 
 For modal analysis:
 
-1. **Create the mesh** using your preferred geometry and resolution.
+1. **Create the mesh** using your preferred geometry and resolution, for example, `solver = FDFDModeSolver(frequency, x_range, y_range, Nx, Ny, num_modes)`
 2. **Add objects** using `solver.add_object()`.
 3. **Apply absorbing boundaries** using `solver.add_absorbing_boundary()` or `solver.add_UPML()`.
 4. **Solve modes** using `solver.solve()`
